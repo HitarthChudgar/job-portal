@@ -4,7 +4,6 @@ const Hero = ({
   // Passing default props
   title = "Become a React Dev",
   subTitle = "Find the React job that fits your skills and needs",
-  myArray,
 }) => {
   return (
     <div>
@@ -16,7 +15,6 @@ const Hero = ({
               {title}
             </h1>
             <p className="my-4 text-xl text-white">{subTitle}</p>
-            <p className="my-4 text-lg text-white">{myArray.join(", ")}</p>
           </div>
         </div>
       </section>
