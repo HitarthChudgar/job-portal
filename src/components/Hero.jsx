@@ -1,6 +1,11 @@
 import React from "react";
 
-const Hero = () => {
+const Hero = ({
+  // Passing default props
+  title = "Become a React Dev",
+  subTitle = "Find the React job that fits your skills and needs",
+  myArray,
+}) => {
   return (
     <div>
       {/* <!-- Hero --> */}
@@ -8,11 +13,10 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-              Become a React Dev
+              {title}
             </h1>
-            <p className="my-4 text-xl text-white">
-              Find the React job that fits your skills and needs
-            </p>
+            <p className="my-4 text-xl text-white">{subTitle}</p>
+            <p className="my-4 text-lg text-white">{myArray.join(", ")}</p>
           </div>
         </div>
       </section>
