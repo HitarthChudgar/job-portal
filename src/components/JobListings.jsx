@@ -13,7 +13,6 @@ const JobListings = () => {
           {recentJobs.map((job) => (
             <JobListing key={job.id} job={job} /> //create a child component
           ))}
-          ;
         </div>
       </div>
     </section>
