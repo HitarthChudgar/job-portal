@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
-const AddJob = () => {
+const AddJob = ({ addJobSubmit }) => {
   // State variables for job posting form fields
   const [title, setTitle] = useState("");
   const [type, setType] = useState("Full-Time");
@@ -11,6 +12,8 @@ const AddJob = () => {
   const [companyDescription, setCompanyDescription] = useState("");
   const [contactEmail, setContactEmail] = useState("");
   const [contactPhone, setContactPhone] = useState("");
+
+  const navigate = useNavigate();
 
   const submitForm = (e) => {
     e.preventDefault();
@@ -29,7 +32,9 @@ const AddJob = () => {
         contactPhone,
       },
     };
-    console.log(newJob);
+    addJobSubmit(newJob);
+
+    return navigate("/jobs");
   };
   return (
     <section className="bg-indigo-50">
