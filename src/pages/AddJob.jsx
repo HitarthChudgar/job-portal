@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const AddJob = ({ addJobSubmit }) => {
   // State variables for job posting form fields
@@ -33,6 +34,7 @@ const AddJob = ({ addJobSubmit }) => {
       },
     };
     addJobSubmit(newJob);
+    toast.success(`The job titled ${title} added successfully!`);
 
     return navigate("/jobs");
   };
