@@ -32,15 +32,21 @@ git clone <repository-url>
 
 2.  **Navigate to the project directory**:
 
-    ```cd job-management-app```
+```
+cd job-management-app
+```
 
 3.  **Install dependencies**:
 
-    ```npm install```
+```
+npm install
+```
 
 4.  **Start the development server**:
 
-    ```npm run dev```
+```
+npm run dev
+```
 
 ## Usage
 
