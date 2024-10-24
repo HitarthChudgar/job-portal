@@ -26,8 +26,9 @@ A **React** and **Vite** based job management application that allows users to a
 ## Installation
 
 1.  **Clone the repository**:
-
-    `11git clone <repository-url>```
+```
+git clone <repository-url>
+```
 
 2.  **Navigate to the project directory**:
 
