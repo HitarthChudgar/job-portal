@@ -20,7 +20,8 @@ A **React** and **Vite** based job management application that allows users to a
 │   ├── AddJob.jsx         # Component to add a new job posting
 │   ├── EditJobPage.jsx    # Component to edit an existing job posting
 │   └── JobPage.jsx        # Component to view detailed job information
-└── ...```
+└── ...
+```
 
 ## Installation
 
