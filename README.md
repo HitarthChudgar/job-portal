@@ -11,11 +11,7 @@ A **React** and **Vite** based job management application that allows users to a
 
 ## Project Structure
 
-bash
-
-Copy code
-
-`src/
+```src/
 │
 ├── assets/               # Contains static assets like images and icons
 ├── layouts/
@@ -24,41 +20,25 @@ Copy code
 │   ├── AddJob.jsx         # Component to add a new job posting
 │   ├── EditJobPage.jsx    # Component to edit an existing job posting
 │   └── JobPage.jsx        # Component to view detailed job information
-└── ...`
+└── ...```
 
 ## Installation
 
 1.  **Clone the repository**:
 
-    bash
-
-    Copy code
-
-    `git clone <repository-url>`
+    `11git clone <repository-url>```
 
 2.  **Navigate to the project directory**:
 
-    bash
-
-    Copy code
-
-    `cd job-management-app`
+    ```cd job-management-app```
 
 3.  **Install dependencies**:
 
-    bash
-
-    Copy code
-
-    `npm install`
+    ```npm install```
 
 4.  **Start the development server**:
 
-    bash
-
-    Copy code
-
-    `npm run dev`
+    ```npm run dev```
 
 ## Usage
 
